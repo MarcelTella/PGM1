@@ -11,8 +11,6 @@ function EUF = CalculateExpectedUtilityFactor( I )
     %
     % Note - We assume I has a single decision node and utility node.
     U = I.UtilityFactors(1);
-    F = [I.RandomFactors(:), I.DecisionFactors(:)];
-    
     D = I.DecisionFactors(1);
 
     % Get joint probabilibity of random factors
