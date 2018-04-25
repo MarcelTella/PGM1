@@ -5,6 +5,7 @@ function [CPD] = CPDFromFactor(F, Y)
 
   % Reorder the var, card and val fields of Fnew so that the last var is the 
   % child variable.
+
   Fnew = F;
   YIndexInF = find(F.var == Y);
   this.card = F.card( YIndexInF );
